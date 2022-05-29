@@ -2,13 +2,13 @@
 
 #1. SQL的分类
 /*
-DDL:数据定义语言。CREATE \ ALTER \ DROP \ RENAME \ TRUNCATE
+DDL:数据定义语言。CREATE(创建) \ ALTER(修改表结构) \ DROP(删除表结构) \ RENAME(重命名) \ TRUNCATE(清空表，但表结构还在)
 
 
-DML:数据操作语言。INSERT \ DELETE \ UPDATE \ SELECT （重中之重）
+DML:数据操作语言。INSERT \ DELETE(删除表中一条记录) \ UPDATE(修改表数据) \ SELECT(DQL,一些人把它单独拿出来分类) （重中之重）
 
 
-DCL:数据控制语言。COMMIT \ ROLLBACK \ SAVEPOINT \ GRANT \ REVOKE
+DCL:数据控制语言(控制操作)。COMMIT(事务提交) \ ROLLBACK(事务回滚) \ SAVEPOINT(设置保存点) \ GRANT(赋予权限) \ REVOKE(回收权限)
 
 
 学习技巧：大处着眼、小处着手。
@@ -81,7 +81,7 @@ FROM employees;
 
 #6. 列的别名
 # as:全称：alias(别名),可以省略
-# 列的别名可以使用一对""引起来，不要使用''。
+# 列的别名可以使用一对""引起来，不要使用''(虽然写成单引号不会报错，但是规范是用的双引号，只有定义字符串的时候才建议使用单引号)。
 SELECT employee_id emp_id,last_name AS lname,department_id "部门id",salary * 12 AS "annual sal"
 FROM employees;
 
