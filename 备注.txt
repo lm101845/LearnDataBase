@@ -1,3 +1,6 @@
 JavaWeb里面也有一部分MySQL数据库的学习，为了保证JavaWeb的完整性，那部分我就不单独提取出来放在这里面了。
 
 我这里是自己额外学习数据库的一些视频笔记和代码。
+
+视频资料：
+免费视频及资料下载地址：https://pan.baidu.com/s/1GfkpJqPXGX9MszHDfyTM9g?pwd=yyds 提取码：yyds 
