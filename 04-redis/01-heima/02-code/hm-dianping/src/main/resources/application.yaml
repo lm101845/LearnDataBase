@@ -11,13 +11,16 @@ spring:
   redis:
     host: 101.201.238.8
     port: 6379
-    password: 123456
+#    password: "123456"
+    #我这里yml文件配置redis密码要加双引号，不然redis识别不到
+#    我是不写密码，才能连接成功
     lettuce:
       pool:
         max-active: 10
         max-idle: 10
         min-idle: 1
         time-between-eviction-runs: 10s
+  #最小空闲
   jackson:
     default-property-inclusion: non_null # JSON处理时忽略非空字段
 mybatis-plus:
